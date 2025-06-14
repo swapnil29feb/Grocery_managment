@@ -1,0 +1,344 @@
+* {
+	font-family sans-serif, arial;
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-size:16px;
+	color: green;
+}
+a {
+	text-decoration:none;
+}
+:target {
+	display:block!important;
+}
+
+/********** HEADER CSS STARTS **********/  
+
+header {
+	box-shadow: 0px 0px 10px 0px #0000001f;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.container {
+	width:100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:0px 10px;
+}
+.heads {
+	margin:6px 0px 4px 0px;
+	display:flex;
+}
+.logo {
+	max-width:30%;
+	min-width:200px;
+}
+.menu {
+	max-width:70%;
+	min-width:100px;
+	margin-left: auto;
+	text-align:center;
+}
+.menu ul {
+	display: flex;
+	list-style: none;
+	gap: 25px;
+	margin:0px;
+	margin-top:18px;
+}
+.menu ul li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.openicon {
+	display:none;
+	position: relative;
+    float: right;
+    font-size: 34px;
+    right: 8px; 
+    font-weight: bold;
+}
+.closeicon {
+	display:none;
+	float:right;
+	font-size: 28px; 
+}
+
+/** FOR MOBILE VERSION **/
+
+@media screen and (max-width: 480px) {
+.openicon, .closeicon {
+ 	display:block;
+}
+#menu {
+	 position: fixed;
+	 left: 0px;
+	 background: #00000094;
+	 width: 100%;
+	 height: 100%;
+	 top: 0px;
+	 text-align: left;
+	 display: none;
+}
+.menu-inner{
+    background: white;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 70%;
+    position: absolute;
+    padding: 20px;
+}
+#menu ul {
+	 display: block;
+	 margin-top: 45px;
+}
+#menu ul li {
+	 margin-bottom:25px;
+}
+}
+
+
+
+
+/********** HEADER CSS END **********/
+
+
+/********** SLIDER CSS STARTS **********/  
+
+.w-100 {
+	width:100%;
+}
+.slider {
+    object-fit: cover;
+    width: 100%;
+    height:550px;
+	object-position:bottom;
+}
+
+/***  iPad Screens ***/
+@media screen and (max-width: 768px) {
+	.slider 
+    {
+		height:350px;
+	}	
+}
+
+/***  Mobile Screens ***/
+@media screen and (max-width: 480px) {
+	.slider 
+    {
+		height:180px;
+	}	
+}
+
+/********** SLIDER CSS END **********/
+
+/********** CATEGORY CSS STARTS **********/  
+
+.category {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+	display: grid;
+	gap: 15px;
+	margin:80px 0px;
+	text-align:center
+}
+.category div {
+    padding: 20px 0px;
+    border-radius: 12px;
+    background: #fafffa;
+    border:2px dashed green;
+}
+.category img {
+	height:120px
+}
+.category h4 {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/***  iPad screens ***/
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) {
+.category {
+	gap: 35px;
+  }	
+}
+
+/********** CATEGORY CSS END **********/
+
+/********** PRODUCT CSS STARTS **********/  
+
+.product {
+	margin:100px 0px;
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.pro {
+	border: 1px solid #d0d0d0;
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	margin-bottom:20px;
+}
+.pro h2 {
+    font-size: 18px;
+    margin: 20px 0px 5px 0px;
+}
+
+.pro b {
+	font-size: 28px;
+	font-weight:500;
+}
+.pro a {
+    text-align: center;
+    background: forestgreen;
+    color: white;
+    padding: 11px 4px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.pro p {
+    margin-top: 5px;
+    color: forestgreen;
+    font-size: 14px;
+}
+
+/********** PRODUCT CSS END **********/
+
+/********** ADVERSITEMENT BANNER CSS STARTS **********/  
+
+.banner {
+	margin:40px 0px;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/********** ADVERSITEMENT BANNER CSS END **********/
+
+
+/********** FOOTER CSS STARTS **********/  
+
+footer{
+	background:#f2ffe4;
+	padding:40px 0px;	   
+}
+.foots {
+	padding:20px 0px 20px 20px;
+	display: grid;
+	gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	margin:0px auto;
+}
+.foots p{
+	padding-right:60px;
+	line-height:28px;
+}
+.foots table td{
+	padding:10px 0px; 
+}
+.col-foot h2 {
+	font-size:18px;
+	margin-bottom:25px;
+}
+.col-foot li {
+	margin-bottom:15px;
+	list-style-type: disclosure-closed;
+}
+
+/********** FOOTER CSS END **********/
+
+/* Dropdown menu styles */
+.menu-inner ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.menu-inner ul li:hover > ul {
+    display: block;
+}
+
+/* Blinking cart */
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* Cart hover effect */
+.cart-items {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.cart:hover .cart-items {
+    display: block;
+}
+
+
+/* Dropdown menu styles */
+.menu-inner ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.menu-inner ul li:hover > ul {
+    display: block;
+}
+
+/* Blinking cart */
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* Cart hover effect */
+.cart-items {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.cart:hover .cart-items {
+    display: block;
+}
